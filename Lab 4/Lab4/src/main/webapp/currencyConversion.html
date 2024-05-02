@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>Currency Conversion</title>
+</head>
+<body>
+    <h1>Use JSP Declaration tag,JSP Scriplet and JSP Expression in application</h1>
+    
+    <h3 style="color: purple">Currency Conversion</h3>
+    <form action="processCurrency.jsp" method="post">
+        <label for="amount">Amount (in RM):</label>
+        <input type="text" id="amount" name="amount" placeholder="in RM" required><br><br>
+        
+        <label for="currency">Convert to:</label>
+        <select id="currency" name="currency" required>
+            <option value="1">USD</option>
+            <option value="2">Pound Sterling</option>
+            <option value="3">Euro</option>
+        </select><br><br>
+        
+        <input type="submit" value="Convert">
+        <input type="button" value="Cancel" onclick="window.location.href='cancel.jsp'">
+    </form>
+</body>
+</html>
